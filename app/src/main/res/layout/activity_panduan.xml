@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PanduanActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="PANDUAN"
+        app:titleTextColor="@color/white"></android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_large">
+
+
+            <EditText
+                fontPath="fonts/open_sans.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:enabled="false"
+                android:padding="@dimen/spacing_large"
+                android:text="Cara melakukan diagnosa penyakit gigi dan mulut "
+                android:textColor="@color/white" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <EditText
+                        fontPath="fonts/open_sans.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:padding="@dimen/spacing_large"
+                        android:text="1. Setelah anda membuka aplikasi sistem pakar penyakit gigi dan mulut, Klik button identifikasi." />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grey_500" />
+
+                    <EditText
+                        android:id="@+id/et_username"
+                        fontPath="fonts/open_sans.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:padding="@dimen/spacing_large"
+                        android:text="2. Dihalaman identifikasi terdapat beberapa gejala, anda dapat memilih gejala yang dialami." />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grey_500" />
+
+                    <EditText
+                        fontPath="fonts/open_sans.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:padding="@dimen/spacing_large"
+                        android:text="3. Klik button analisa jika anda telah memilih gejala yang dialami." />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grey_500" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:padding="@dimen/spacing_large"
+                        android:text="4. Anda akan melihat beberapa persentase kemungkinan penyakit gigi dan mulut yang diderita." />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grey_500" />
+
+                    <EditText
+                        fontPath="fonts/open_sans.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:padding="@dimen/spacing_large"
+                        android:text="5. Untuk mengetahui deskripsi penyakit, anda dapat mengklik persen penyakit." />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <EditText
+
+                android:textColor="@color/white"
+                fontPath="fonts/open_sans.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:enabled="false"
+                android:padding="@dimen/spacing_large"
+                android:text="Catatan : Apalikasi ini hanya membantu memeberikan informasi kemungkinan penyakit gigi dan mulut berdasarkan penilaian dari tiga pakar (dokter)  gigi dan mulut. Untuk lebih jelasnya anda dapat berkonsultasi langsung dengan dokter gigi dan mulut" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
